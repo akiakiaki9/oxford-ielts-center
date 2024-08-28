@@ -22,7 +22,7 @@ export default function RegistrationForm() {
 
         const loadRecaptcha = () => {
             const script = document.createElement('script');
-            script.src = 'https://www.google.com/recaptcha/enterprise.js?render=6LdngysqAAAAAHFmIBWhU1NPbMmKS1RdePIub-1F';
+            script.src = 'https://www.google.com/recaptcha/enterprise.js?render=6Ld74TAqAAAAAI68Ser5VLBqJFyaznil05H5ZT7r';
             script.async = true;
             script.defer = true;
             document.body.appendChild(script);
