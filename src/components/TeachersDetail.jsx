@@ -64,7 +64,7 @@ export default function TeachersDetail() {
                             </div>
                         </div>
                         <div className="teacherdet-blok__container">
-                            <img src={teacher.image} alt='No photo' />
+                            <img src={teacher.image} alt={`Photo of ${teacher.title}`} />
                         </div>
                     </div>
                     <br />

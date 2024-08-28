@@ -20,7 +20,7 @@ export default function Footer1() {
           <div className="footer1-blok__section-container">
             <a href="https://www.instagram.com/oxford_bukhara"><FaInstagram className='footer1__icon' /></a>
             <a href="https://t.me/oxford_bukhara"><ImTelegram className='footer1__icon'/></a>
-            <a href=""><IoLogoYoutube className='footer1__icon'/></a>
+            <a href="www.youtube.com/@akigazzz"><IoLogoYoutube className='footer1__icon'/></a>
           </div>
         </div>
       </div>

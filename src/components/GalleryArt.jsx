@@ -24,7 +24,7 @@ export default function GalleryArt() {
                 {GALLERY.map((item, index) => (
                     <img
                         key={item.id}
-                        src={item.img}
+                        src={item.photo}
                         alt={`Gallery Image ${item.id}`}
                         className="gallery-image"
                         onClick={() => openCarousel(index)}

@@ -8,27 +8,27 @@ import photo6 from '../images/gallery/gallery6.png'
 const GALLERY = [
     {
         'id': 1,
-        'img': photo1
+        'photo': photo1
     },
     {
         'id': 2,
-        'img': photo2
+        'photo': photo2
     },
     {
         'id': 3,
-        'img': photo3
+        'photo': photo3
     },
     {
         'id': 4,
-        'img': photo4
+        'photo': photo4
     },
     {
         'id': 5,
-        'img': photo5
+        'photo': photo5
     },
     {
         'id': 6,
-        'img': photo6
+        'photo': photo6
     },
 ]
 
