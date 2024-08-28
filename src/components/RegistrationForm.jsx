@@ -20,18 +20,15 @@ export default function RegistrationForm() {
         };
         const mask = IMask(telInputRef.current, maskOptions);
 
-        // Закомментируем код загрузки reCAPTCHA
-        /*
         const loadRecaptcha = () => {
             const script = document.createElement('script');
-            script.src = 'https://www.google.com/recaptcha/enterprise.js?render=6Ld74TAqAAAAAI68Ser5VLBqJFyaznil05H5ZT7r';
+            script.src = 'https://www.google.com/recaptcha/enterprise.js?render=6LdVpTAqAAAAAKm1jpZ5F6xzcHbjTnyg5YPhXXHU';
             script.async = true;
             script.defer = true;
             document.body.appendChild(script);
         };
 
         loadRecaptcha();
-        */
 
         return () => {
             mask.destroy();
@@ -49,19 +46,15 @@ export default function RegistrationForm() {
     const handleFormSubmit = async (event) => {
         event.preventDefault();
 
-        // Закомментируем получение токена reCAPTCHA
-        /*
+        // Получаем токен reCAPTCHA
         const token = await new Promise((resolve) => {
             window.grecaptcha.enterprise.ready(() => {
-                window.grecaptcha.enterprise.execute('6LdngysqAAAAAHFmIBWhU1NPbMmKS1RdePIub-1F', { action: 'submit' }).then(resolve);
+                window.grecaptcha.enterprise.execute('6LdVpTAqAAAAAKm1jpZ5F6xzcHbjTnyg5YPhXXHU', { action: 'submit' }).then(resolve);
             });
         });
-        */
 
         // Проверка времени последней отправки формы
         const currentTime = new Date().getTime();
-
-        // Если lastSubmissionTime еще не установлено, просто продолжите
         if (lastSubmissionTime) {
             if (currentTime - lastSubmissionTime < 30 * 60 * 1000) {
                 alert('Пожалуйста, попробуйте снова через 30 минут.');
@@ -75,8 +68,7 @@ export default function RegistrationForm() {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                // Удалите токен из тела запроса
-                body: JSON.stringify({ ...formData }) // Удалите "g-recaptcha-response": token
+                body: JSON.stringify({ ...formData, "g-recaptcha-response": token })
             });
 
             if (response.ok) {
@@ -106,9 +98,12 @@ export default function RegistrationForm() {
                 onSubmit={handleFormSubmit}
                 name="registration-form"
                 method="POST"
+                data-netlify="true"
             >
                 {/* Honeypot Field */}
                 <input type="text" name="_gotcha" style={{ display: 'none' }} />
+
+                <input type="hidden" name="form-name" value="registration-form" />
 
                 <div className="registration-form__blok registration-form__blok-1">
                     <div className="registration-form__blok-container">
@@ -210,4 +205,4 @@ export default function RegistrationForm() {
             </form>
         </div>
     );
-}
+};
