@@ -20,6 +20,8 @@ export default function RegistrationForm() {
         };
         const mask = IMask(telInputRef.current, maskOptions);
 
+        // Закомментируем код загрузки reCAPTCHA
+        /*
         const loadRecaptcha = () => {
             const script = document.createElement('script');
             script.src = 'https://www.google.com/recaptcha/enterprise.js?render=6Ld74TAqAAAAAI68Ser5VLBqJFyaznil05H5ZT7r';
@@ -29,6 +31,7 @@ export default function RegistrationForm() {
         };
 
         loadRecaptcha();
+        */
 
         return () => {
             mask.destroy();
@@ -46,12 +49,14 @@ export default function RegistrationForm() {
     const handleFormSubmit = async (event) => {
         event.preventDefault();
 
-        // Получаем токен reCAPTCHA
+        // Закомментируем получение токена reCAPTCHA
+        /*
         const token = await new Promise((resolve) => {
             window.grecaptcha.enterprise.ready(() => {
                 window.grecaptcha.enterprise.execute('6LdngysqAAAAAHFmIBWhU1NPbMmKS1RdePIub-1F', { action: 'submit' }).then(resolve);
             });
         });
+        */
 
         // Проверка времени последней отправки формы
         const currentTime = new Date().getTime();
@@ -70,7 +75,8 @@ export default function RegistrationForm() {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({ ...formData, "g-recaptcha-response": token })
+                // Удалите токен из тела запроса
+                body: JSON.stringify({ ...formData }) // Удалите "g-recaptcha-response": token
             });
 
             if (response.ok) {
@@ -141,11 +147,9 @@ export default function RegistrationForm() {
                             required
                         />
                     </div>
-
                 </div>
 
                 <div className="registration-form__blok">
-
                     <div className="registration-form__blok-container">
                         <label htmlFor="age">Возраст</label>
                         <input
@@ -188,7 +192,6 @@ export default function RegistrationForm() {
                             <option value="CEFR">CEFR</option>
                         </select>
                     </div>
-
                 </div>
 
                 {/* Поле для ввода текста */}
@@ -207,4 +210,4 @@ export default function RegistrationForm() {
             </form>
         </div>
     );
-};
+}
