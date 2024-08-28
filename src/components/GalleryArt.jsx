@@ -47,8 +47,8 @@ export default function GalleryArt() {
                         modules={[Navigation]}
                     >
                         {GALLERY.map((item) => (
-                            <SwiperSlide key={item.id} className='ahah'>
-                                <img src={item.img} alt={`Slide ${item.id}`} className="carousel-image" />
+                            <SwiperSlide key={item.id}>
+                                <img src={item.photo} alt={`Slide ${item.id}`} className="carousel-image" />
                             </SwiperSlide>
                         ))}
                     </Swiper>
