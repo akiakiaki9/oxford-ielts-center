@@ -1,8 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+//css files
+import './css files/style.css'
+import './css files/navbar1.css'
+import './css files/navbar2.css'
+import './css files/registration.css'
+import './css files/header1.css'
+import './css files/footer1.css'
+import './css files/footer2.css'
+import './css files/title.css'
+import './css files/section.css'
+import './css files/section1.css'
+import './css files/section2.css'
+import './css files/section3.css'
+import './css files/testimonials.css'
+import './css files/testimonialcar.css'
+import './css files/contactform.css'
+import './css files/scrolltop.css'
+import './css files/gallery.css'
+import './css files/teachers.css'
+import './css files/teacherdet.css'
+import './css files/aboutus.css'
+import './css files/news.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,8 +31,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
