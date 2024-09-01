@@ -13,6 +13,7 @@
     background-color: #f1f1f1;
     transition: .3s;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .section-blok:hover {
@@ -41,27 +42,18 @@
     height: 80px;
 }
 
-@media (max-width: 1051px) {
-    .section-blok {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
+@media (max-width: 927px) {
 
     .section__number {
-        font-size: 230%;
+        font-size: 220%;
     }
-
+    
     .section__title {
-        font-size: 100%;
+        font-size: 90%;
     }
-
+    
     .section-blok__container img {
         width: 60px;
         height: 60px;
-    }
-
-    .section-blok__container div {
-        width: 150px;
     }
 }

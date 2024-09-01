@@ -10,8 +10,8 @@ import ScrollTop from '../components/ScrollTop'
 export default function Teacher() {
   return (
     <div>
-        <Navbar1 />
         <Navbar2 />
+        <Navbar1 />
         <Title />
         <Teachers />
         <Footer1 />

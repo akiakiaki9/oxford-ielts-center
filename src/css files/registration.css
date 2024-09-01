@@ -3,12 +3,13 @@
     justify-content: center;
     align-items: center;
     padding: 50px 10px;
-    background-image: url(../images/register\ background.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.334)), url(../images/register\ background.jpeg);
+
     background-position: center;
     background-attachment: fixed;
     min-height: 80vh;
-    background-blend-mode: multiply;
-    background-color: #5a5a5a;
+    /* background-blend-mode: multiply;
+    background-color: #5a5a5a; */
     color: #fff;
 }
 
