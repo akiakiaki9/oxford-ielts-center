@@ -4,8 +4,8 @@
     align-items: center;
     padding: 50px 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.334)), url(../images/register\ background.jpeg);
-
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
     min-height: 80vh;
     /* background-blend-mode: multiply;
