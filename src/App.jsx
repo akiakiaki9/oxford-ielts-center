@@ -7,10 +7,14 @@ import Gallery from './pages/Gallery'
 import News from './pages/News'
 import TeachersDetail from './components/TeachersDetail'
 import Teacher from './pages/Teacher'
+import LoadPage from './components/LoadPage'
+import ScrollTop from './components/ScrollTop'
 
 export default function App() {
     return (
         <BrowserRouter>
+        <LoadPage />
+        <ScrollTop />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/teachers' element={<Teacher />} />

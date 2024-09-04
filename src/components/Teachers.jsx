@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 export default function Teachers() {
   return (
     <div className='teachers'>
-      <div className="teachers-sar">
+      <div className="subtitle-sar">
         <p>Experience Team Member</p>
-        <div className='teachers-sar__div'></div>
+        <div className='subtitle-sar__div'></div>
         <h1>Meet our professionals</h1>
       </div>
 
