@@ -56,29 +56,28 @@ export default function TeachersDetail() {
                 <div className='teacherdet'>
                     <div className="teacherdet-blok">
                         <div className='teacherdet-blok__container'>
-                            <div className='teacherdet-blok__container-1'>
+                            <div className="teacherdet-blok__container-1">
+                                <img src={teacher.image} alt={`Photo of ${teacher.title}`} />
+                            </div>
+                            <div className='teacherdet-blok__container-2'>
                                 <h1 className='teacherdet__title'>{teacher.title}</h1>
+                                <br />
                                 <b className='teacherdet__age'>{teacher.age} y.o, {teacher.category}</b>
-                                <br /><br />
+                                <br />
                                 <p className='teacherdet__students'>Up to <span>{studentsCount}</span> students trained</p>
                             </div>
                         </div>
-                        <div className="teacherdet-blok__container">
-                            <img src={teacher.image} alt={`Photo of ${teacher.title}`} />
-                        </div>
-                    </div>
-                    <br />
-                    <br />
-                    <div className="teacherdet-footer">
-                        <h2>Biography</h2>
-                        <p>{teacher.body} {teacher.body} {teacher.body} {teacher.body} {teacher.body} {teacher.body}</p>
-                    </div>
-                    <br /><br />
-                    <div className="teacherdet-links">
-                        <h2>Social networks:</h2>
-                        <div>
-                            <a href={teacher.telegramLink}><FaTelegramPlane className='teacherdet__link' /></a>
-                            <a href={teacher.instagramLink}><FaInstagram className='teacherdet__link' /></a>
+                        <div className="teachersdet-blok__container">
+                            <h2>Biography</h2>
+                            <p>{teacher.body} {teacher.body} {teacher.body} {teacher.body} {teacher.body} {teacher.body}</p>
+                            <br />
+                            <div className="teacherdet-blok__container-links">
+                                <h2>Social networks:</h2>
+                                <div>
+                                    <a href={teacher.telegramLink}><FaTelegramPlane className='teacherdet__link' /></a>
+                                    <a href={teacher.instagramLink}><FaInstagram className='teacherdet__link' /></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
