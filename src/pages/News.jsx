@@ -20,7 +20,7 @@ export default function News() {
                   {news.title}
                 </div>
               ))} */}
-              <h1 style={{height: '50vh'}}>Пока нет новостей</h1>
+              <h1 style={{height: '50vh'}}>No news yet</h1>
             </div>
           </div>
         </div>
