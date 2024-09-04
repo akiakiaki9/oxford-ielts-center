@@ -57,7 +57,7 @@ export default function RegistrationForm() {
         const currentTime = new Date().getTime();
         if (lastSubmissionTime) {
             if (currentTime - lastSubmissionTime < 30 * 60 * 1000) {
-                alert('Пожалуйста, попробуйте снова через 30 минут.');
+                alert('Please try again in 30 minutes.');
                 return;
             }
         }
@@ -72,7 +72,7 @@ export default function RegistrationForm() {
             });
 
             if (response.ok) {
-                alert('Спасибо за регистрацию!');
+                alert('Thanks for registration!');
                 setFormData({
                     firstName: '',
                     lastName: '',
@@ -84,11 +84,11 @@ export default function RegistrationForm() {
                 });
                 setLastSubmissionTime(currentTime); // Обновляем время последней отправки
             } else {
-                alert('Ошибка при отправке формы.');
+                alert('Error submitting form.');
             }
         } catch (err) {
             console.error(err);
-            alert('Ошибка при отправке формы.');
+            alert('Error submitting form.');
         }
     };
 
@@ -107,7 +107,7 @@ export default function RegistrationForm() {
 
                 <div className="registration-form__blok registration-form__blok-1">
                     <div className="registration-form__blok-container">
-                        <label htmlFor="firstName">Имя</label>
+                        <label htmlFor="firstName">Name</label>
                         <input
                             id="firstName"
                             type="text"
@@ -119,7 +119,7 @@ export default function RegistrationForm() {
                     </div>
 
                     <div className="registration-form__blok-container">
-                        <label htmlFor="lastName">Фамилия</label>
+                        <label htmlFor="lastName">Last Name</label>
                         <input
                             id="lastName"
                             type="text"
@@ -131,7 +131,7 @@ export default function RegistrationForm() {
                     </div>
 
                     <div className="registration-form__blok-container">
-                        <label htmlFor="tel">Телефон</label>
+                        <label htmlFor="tel">Phone</label>
                         <input
                             id="tel"
                             type="tel"
@@ -146,7 +146,7 @@ export default function RegistrationForm() {
 
                 <div className="registration-form__blok">
                     <div className="registration-form__blok-container">
-                        <label htmlFor="age">Возраст</label>
+                        <label htmlFor="age">Age</label>
                         <input
                             id="age"
                             type="number"
@@ -159,7 +159,7 @@ export default function RegistrationForm() {
                     </div>
 
                     <div className="registration-form__blok-container">
-                        <label htmlFor="gender">Пол</label>
+                        <label htmlFor="gender">Gender</label>
                         <select
                             id="gender"
                             name="gender"
@@ -167,14 +167,14 @@ export default function RegistrationForm() {
                             onChange={handleInputChange}
                             required
                         >
-                            <option value="" disabled>Выберите пол</option>
-                            <option value="male">Мужской</option>
-                            <option value="female">Женский</option>
+                            <option value="" disabled>Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
                         </select>
                     </div>
 
                     <div className="registration-form__blok-container">
-                        <label htmlFor="examType">Выбор экзамена</label>
+                        <label htmlFor="examType">Exam</label>
                         <select
                             id="examType"
                             name="examType"
@@ -182,7 +182,7 @@ export default function RegistrationForm() {
                             onChange={handleInputChange}
                             required
                         >
-                            <option value="" disabled>Выберите экзамен</option>
+                            <option value="" disabled>Select exam</option>
                             <option value="IELTS">IELTS</option>
                             <option value="CEFR">CEFR</option>
                         </select>
@@ -191,7 +191,7 @@ export default function RegistrationForm() {
 
                 {/* Поле для ввода текста */}
                 <div className="registration-form__blok-container">
-                    <label htmlFor="body">Дополнительная информация</label>
+                    <label htmlFor="body">Additional information</label>
                     <textarea
                         id="body"
                         name="body"
@@ -201,7 +201,7 @@ export default function RegistrationForm() {
                     ></textarea>
                 </div>
                 <br />
-                <button className='registration__submit' type="submit">Зарегистрироваться</button>
+                <button className='registration__submit' type="submit">Submit</button>
             </form>
         </div>
     );

@@ -59,7 +59,7 @@ export default function ContactForm() {
         // Если lastSubmissionTime еще не установлено, просто продолжите
         if (lastSubmissionTime) {
             if (currentTime - lastSubmissionTime < 30 * 60 * 1000) {
-                alert('Пожалуйста, попробуйте снова через 30 минут.');
+                alert('Please try again in 30 minutes.');
                 return;
             }
         }
@@ -74,7 +74,7 @@ export default function ContactForm() {
             });
 
             if (response.ok) {
-                alert('Спасибо за регистрацию!');
+                alert('Thanks for registration!');
                 setFormData({
                     firstName: '',
                     lastName: '',
@@ -86,20 +86,20 @@ export default function ContactForm() {
                 });
                 setLastSubmissionTime(currentTime); // Обновляем время последней отправки
             } else {
-                alert('Ошибка при отправке формы.');
+                alert('Error submitting form.');
             }
         } catch (err) {
             console.error(err);
-            alert('Ошибка при отправке формы.');
+            alert('Error submitting form.');
         }
     };
 
     return (
         <>
             <div className='contact-title'>
-                <h3>Заполните анкету для обратной связи</h3>
+                <h3>Fill out the feedback form</h3>
                 <div className='contact-title__div'></div>
-                <p>Или звоните по номеру <a href="tel:+998770047766">+998 77-004-77-66</a></p>
+                <p>Or call the number <a href="tel:+998770047766">+998 77-004-77-66</a></p>
             </div>
             <div className="registration1">
             <form
@@ -112,7 +112,7 @@ export default function ContactForm() {
 
                 <div className="registration1-form__blok registration1-form__blok-1">
                     <div className="registration1-form__blok-container">
-                        <label htmlFor="firstName">Имя</label>
+                        <label htmlFor="firstName">Name</label>
                         <input
                             id="firstName"
                             type="text"
@@ -124,7 +124,7 @@ export default function ContactForm() {
                     </div>
 
                     <div className="registration1-form__blok-container">
-                        <label htmlFor="lastName">Фамилия</label>
+                        <label htmlFor="lastName">Last Name</label>
                         <input
                             id="lastName"
                             type="text"
@@ -136,7 +136,7 @@ export default function ContactForm() {
                     </div>
 
                     <div className="registration1-form__blok-container">
-                        <label htmlFor="tel">Телефон</label>
+                        <label htmlFor="tel">Phone</label>
                         <input
                             id="tel"
                             type="tel"
@@ -153,7 +153,7 @@ export default function ContactForm() {
                 <div className="registration1-form__blok">
 
                     <div className="registration1-form__blok-container">
-                        <label htmlFor="age">Возраст</label>
+                        <label htmlFor="age">Age</label>
                         <input
                             id="age"
                             type="number"
@@ -166,7 +166,7 @@ export default function ContactForm() {
                     </div>
 
                     <div className="registration1-form__blok-container">
-                        <label htmlFor="gender">Пол</label>
+                        <label htmlFor="gender">Gender</label>
                         <select
                             id="gender"
                             name="gender"
@@ -174,14 +174,14 @@ export default function ContactForm() {
                             onChange={handleInputChange}
                             required
                         >
-                            <option value="" disabled>Выберите пол</option>
+                            <option value="" disabled>Select gender</option>
                             <option value="male">Мужской</option>
                             <option value="female">Женский</option>
                         </select>
                     </div>
 
                     <div className="registration1-form__blok-container">
-                        <label htmlFor="examType">Выбор экзамена</label>
+                        <label htmlFor="examType">Exam</label>
                         <select
                             id="examType"
                             name="examType"
@@ -189,7 +189,7 @@ export default function ContactForm() {
                             onChange={handleInputChange}
                             required
                         >
-                            <option value="" disabled>Выберите экзамен</option>
+                            <option value="" disabled>Select exam</option>
                             <option value="IELTS">IELTS</option>
                             <option value="CEFR">CEFR</option>
                         </select>
@@ -199,7 +199,7 @@ export default function ContactForm() {
 
                 {/* Поле для ввода текста */}
                 <div className="registration1-form__blok-container">
-                    <label htmlFor="body">Дополнительная информация</label>
+                    <label htmlFor="body">Additional information</label>
                     <textarea
                         id="body"
                         name="body"
@@ -209,7 +209,7 @@ export default function ContactForm() {
                     ></textarea>
                 </div>
                 <br />
-                <button className='registration1__submit' type="submit">Зарегистрироваться</button>
+                <button className='registration1__submit' type="submit">Submit</button>
             </form>
         </div>
         </>

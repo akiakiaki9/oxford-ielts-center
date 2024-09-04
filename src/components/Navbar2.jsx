@@ -10,7 +10,7 @@ export default function Navbar2() {
           <a href="tel:+998770047766" className='navbar2__hover'>+998 77-004-77-66</a>
         </div>
         <div className="navbar2-blok__section">
-          <Link to='/contacts' className='navbar2__contact'>Контакты</Link>
+          <Link to='/contacts' className='navbar2__contact'>Contacts</Link>
         </div>
       </div>
     </div>

@@ -47,12 +47,12 @@ export default function Navbar1() {
         <div className="close-icon" onClick={toggleMenu}>
           <FaTimes />
         </div>
-        <Link to='/' onClick={() => handleLinkClick('/')}>Главная</Link>
-        <Link to='/teachers' onClick={() => handleLinkClick('/menu')}>Учителя</Link>
-        <Link to='/gallery' onClick={() => handleLinkClick('/gallery')}>Галлерея</Link>
-        <Link to='/about-us' onClick={() => handleLinkClick('/about-us')}>О нас</Link>
-        <Link to='/news' onClick={() => handleLinkClick('/news')}>Новости</Link>
-        <Link to='/contacts' onClick={() => handleLinkClick('/contacts')}>Контакты</Link>
+        <Link to='/' onClick={() => handleLinkClick('/')}>Home</Link>
+        <Link to='/teachers' onClick={() => handleLinkClick('/menu')}>teachers</Link>
+        <Link to='/gallery' onClick={() => handleLinkClick('/gallery')}>Gallery</Link>
+        <Link to='/about-us' onClick={() => handleLinkClick('/about-us')}>About Us</Link>
+        <Link to='/news' onClick={() => handleLinkClick('/news')}>News</Link>
+        <Link to='/contacts' onClick={() => handleLinkClick('/contacts')}>Contacts</Link>
       </div>
       {isOpen && <div className="overlay" onClick={toggleMenu} />}
     </nav>

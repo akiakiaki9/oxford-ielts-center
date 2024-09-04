@@ -58,9 +58,9 @@ export default function TeachersDetail() {
                         <div className='teacherdet-blok__container'>
                             <div className='teacherdet-blok__container-1'>
                                 <h1 className='teacherdet__title'>{teacher.title}</h1>
-                                <b className='teacherdet__age'>{teacher.age} лет, {teacher.category}</b>
+                                <b className='teacherdet__age'>{teacher.age} y.o, {teacher.category}</b>
                                 <br /><br />
-                                <p className='teacherdet__students'>До <span>{studentsCount}</span> студентов обученных</p>
+                                <p className='teacherdet__students'>Up to <span>{studentsCount}</span> students trained</p>
                             </div>
                         </div>
                         <div className="teacherdet-blok__container">
@@ -70,12 +70,12 @@ export default function TeachersDetail() {
                     <br />
                     <br />
                     <div className="teacherdet-footer">
-                        <h2>Биография</h2>
+                        <h2>Biography</h2>
                         <p>{teacher.body} {teacher.body} {teacher.body} {teacher.body} {teacher.body} {teacher.body}</p>
                     </div>
                     <br /><br />
                     <div className="teacherdet-links">
-                        <h2>Социальные сети:</h2>
+                        <h2>Social networks:</h2>
                         <div>
                             <a href={teacher.telegramLink}><FaTelegramPlane className='teacherdet__link' /></a>
                             <a href={teacher.instagramLink}><FaInstagram className='teacherdet__link' /></a>

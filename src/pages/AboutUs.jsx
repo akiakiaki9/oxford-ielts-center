@@ -13,86 +13,82 @@ export default function AboutUs() {
       <Navbar2 />
       <Title />
       <div className='about-us'>
-        <div className="about-us-blok">
-          <h1>О нас</h1>
-          <p>Добро пожаловать в Oxford IELTS Center — ведущий учебный центр в Бухаре, специализирующийся на подготовке к международным экзаменам
-            IELTS и CEFR. Мы гордимся тем, что являемся надежным партнером для всех, кто стремится повысить свой уровень владения английским
-            языком и достичь выдающихся результатов на экзаменах.
+        <div className="about-us-block">
+          <h1>About Us</h1>
+          <p>Welcome to Oxford IELTS Center — the leading educational center in Bukhara specializing in preparing for international exams
+            IELTS and CEFR. We take pride in being a reliable partner for everyone who strives to improve their English proficiency and achieve outstanding results in exams.
           </p>
           <br />
-          <h1>Наша миссия</h1>
-          <p>В Oxford IELTS Center наша главная цель — помочь каждому студенту раскрыть свой потенциал и добиться успеха. Мы понимаем, что
-            обучение английскому языку — это не просто подготовка к экзамену, но и важный шаг к расширению возможностей для образования,
-            карьеры и личного развития. Мы стремимся предоставить студентам качественное образование и создать условия, способствующие
-            их успеху.
+          <h1>Our Mission</h1>
+          <p>At Oxford IELTS Center, our main goal is to help each student unlock their potential and achieve success. We understand that
+            learning English is not just exam preparation but an important step toward expanding opportunities for education,
+            career, and personal development. We aim to provide students with quality education and create conditions conducive to their success.
           </p>
           <br />
-          <h1>Преимущества обучения у нас</h1>
+          <h1>The Benefits of Studying with Us</h1>
           <ol>
             <li>
-              <p><b>Профессиональные преподаватели</b><br />
-                Наши преподаватели — это высококвалифицированные специалисты с многолетним опытом работы в области подготовки к экзаменам IELTS
-                и CEFR. Они не только обладают глубокими знаниями языка, но и владеют современными методиками преподавания, что позволяет нашим
-                студентам быстро и эффективно усваивать материал.
+              <p><b>Professional Teachers</b><br />
+                Our teachers are highly qualified professionals with many years of experience in preparing for IELTS
+                and CEFR exams. They not only possess deep knowledge of the language but also use modern teaching methods, enabling our
+                students to quickly and effectively grasp the material.
               </p>
             </li>
             <li>
-              <p><b>Индивидуальный подход</b><br />
-                В Oxford IELTS Center мы понимаем, что каждый студент уникален. Поэтому мы разрабатываем индивидуальные учебные программы,
-                которые учитывают уровень владения языком, цели и потребности каждого ученика. Мы уделяем особое внимание слабым сторонам,
-                помогая превратить их в сильные.
+              <p><b>Individual Approach</b><br />
+                At Oxford IELTS Center, we understand that each student is unique. Therefore, we develop individual study programs
+                that consider the language proficiency level, goals, and needs of each student. We pay special attention to weak points,
+                helping to turn them into strengths.
               </p>
             </li>
             <li>
-              <p><b>Современные методики и материалы</b><br />
-                Мы используем только актуальные учебные материалы и новейшие методики преподавания, которые соответствуют международным
-                стандартам. Наши программы обучения постоянно обновляются, чтобы соответствовать изменениям в форматах экзаменов и требованиям
-                современных образовательных стандартов.
+              <p><b>Modern Methods and Materials</b><br />
+                We use only up-to-date study materials and the latest teaching methods that meet international standards.
+                Our study programs are constantly updated to keep pace with changes in exam formats and the requirements of modern educational standards.
               </p>
             </li>
             <li>
-              <p><b>Поддержка и мотивация</b><br />
-                В процессе обучения мы предоставляем нашим студентам всестороннюю поддержку. Наши преподаватели всегда готовы помочь с любыми
-                возникшими вопросами и поддержать мотивацию на высоком уровне. Мы стремимся создать атмосферу, в которой каждый студент чувствует
-                себя уверенно и мотивированно.
+              <p><b>Support and Motivation</b><br />
+                During the learning process, we provide our students with comprehensive support. Our teachers are always ready to help with any questions
+                and maintain high motivation levels. We strive to create an environment where each student feels confident and motivated.
               </p>
             </li>
             <li>
-              <p><b>Отличные результаты</b><br />
-                Мы гордимся успехами наших студентов. Большинство из них достигает высоких баллов на экзаменах и с легкостью преодолевает языковые
-                барьеры, открывая для себя новые возможности. Наши выпускники успешно поступают в престижные университеты, строят успешные карьеры
-                и продолжают свое развитие.
+              <p><b>Excellent Results</b><br />
+                We are proud of our students' successes. Most of them achieve high scores in exams and easily overcome language barriers,
+                opening up new opportunities for themselves. Our graduates successfully enter prestigious universities, build successful careers,
+                and continue their development.
               </p>
             </li>
           </ol>
           <br /><br />
 
-          <h1>Наши программы</h1>
-          <p>Oxford IELTS Center предлагает широкий спектр программ, включая:</p><br />
+          <h1>Our Programs</h1>
+          <p>Oxford IELTS Center offers a wide range of programs, including:</p><br />
           <ul>
-            <li>Подготовка к экзаменам IELTS (Academic и General Training)</li>
-            <li>Подготовка к экзаменам CEFR (уровни от A1 до C2)</li>
-            <li>Индивидуальные занятия</li>
-            <li>Групповые курсы</li>
-            <li>Интенсивные курсы</li>
+            <li>Preparation for IELTS exams (Academic and General Training)</li>
+            <li>Preparation for CEFR exams (levels from A1 to C2)</li>
+            <li>Individual lessons</li>
+            <li>Group courses</li>
+            <li>Intensive courses</li>
           </ul>
           <br />
-          <p>Мы предлагаем гибкие графики занятий, чтобы обучение было удобным для каждого студента.</p>
+          <p>We offer flexible schedules to make learning convenient for every student.</p>
           <br /><br />
 
-          <h1>Наши достижения</h1>
-          <p>За годы работы Oxford IELTS Center стал признанным лидером в области подготовки к экзаменам IELTS и CEFR в Бухаре. Мы помогли
-            сотням студентов достичь их целей, и продолжаем совершенствовать наши методы, чтобы обеспечить еще более высокие результаты.
+          <h1>Our Achievements</h1>
+          <p>Over the years, Oxford IELTS Center has become a recognized leader in preparing for IELTS and CEFR exams in Bukhara. We have helped
+            hundreds of students achieve their goals and continue to improve our methods to ensure even higher results.
           </p>
           <br /><br />
 
-          <h1>Приглашаем вас стать частью нашей успешной команды</h1>
-          <p>Если вы стремитесь достичь высоких результатов в изучении английского языка и сдать международные экзамены на отличные баллы,
-            Oxford IELTS Center — это ваш лучший выбор. Присоединяйтесь к нам, и мы поможем вам достичь вашей мечты.
+          <h1>We Invite You to Join Our Successful Team</h1>
+          <p>If you are determined to achieve high results in learning English and pass international exams with excellent scores,
+            Oxford IELTS Center is your best choice. Join us, and we will help you achieve your dreams.
           </p>
           <br />
-          <b>Свяжитесь с нами уже сегодня, чтобы узнать больше о наших программах и записаться на первое занятие. Мы с нетерпением ждем вас
-            в Oxford IELTS Center — месте, где начинаются успехи!
+          <b>Contact us today to learn more about our programs and sign up for your first lesson. We look forward to welcoming you
+            at Oxford IELTS Center — the place where success begins!
           </b>
 
         </div>

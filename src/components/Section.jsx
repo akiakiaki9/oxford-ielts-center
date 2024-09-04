@@ -39,21 +39,21 @@ export default function Section() {
                     <img src={stats1} alt="" />
                     <div>
                         <div className='section__number'>{lessonsCount}</div>
-                        <p className='section__title'>Пройденных занятий</p>
+                        <p className='section__title'>Lessons completed</p>
                     </div>
                 </div>
                 <div className="section-blok__container">
                     <img src={stats2} alt="" />
                     <div>
                         <div className='section__number'>{studentsCount}</div>
-                        <p className='section__title'>Cтудентов на данный момент</p>
+                        <p className='section__title'>Students at the moment</p>
                     </div>
                 </div>
                 <div className="section-blok__container">
                     <img src={stats3} alt="" />
                     <div>
                         <div className='section__number'>{workshopsCount}</div>
-                        <p className='section__title'>Пройденных мастер классов</p>
+                        <p className='section__title'>Completed master classes</p>
                     </div>
                 </div>
             </div>
