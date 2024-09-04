@@ -1,39 +1,35 @@
+// TestimonialsCar.js
 import React from 'react';
 import Slider from 'react-slick';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import profile from '../images/profile.jpg';
 import TESTIMONIALS from '../utils/testimonials';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function TestimonialsCar() {
+    
     const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        pauseOnHover: true,
-        nextArrow: (
-            <div>
-                <FaArrowRight style={{ color: 'black', fontSize: '24px' }} />
-            </div>
-        ),
-        prevArrow: (
-            <div>
-                <FaArrowLeft style={{ color: 'black', fontSize: '24px' }} />
-            </div>
-        ),
+        dots: true, // Включение точек навигации
+        infinite: true, // Бесконечная прокрутка
+        speed: 500, // Скорость перехода между слайдами
+        slidesToShow: 1, // Количество отображаемых слайдов
+        slidesToScroll: 1, // Количество слайдов, которые прокручиваются за один раз
+        autoplay: true, // Автоматическое воспроизведение слайдов
+        autoplaySpeed: 2500, // Скорость автоматического воспроизведения (в миллисекундах)
+        pauseOnHover: true, // Остановка воспроизведения при наведении мыши
     };
 
+    // Отображение карусели с отзывами
     return (
         <div className='carousel'>
             <Slider {...settings}>
-                {TESTIMONIALS.map((testimonial, index) => (
-                    <div key={index} className="testimonial">
-                        <h2>{testimonial.name}</h2>
-                        <p>{testimonial.feedback}</p>
-                        <p><strong>{testimonial.role}</strong></p>
+                {TESTIMONIALS.map((testimonial) => (
+                    <div key={testimonial.id} className="testimonial">
+                        <img className='testimonial__img' src={profile} alt="" />
+                        <h2 className='testimonial__name'>{testimonial.name}</h2>
+                        <p className='testimonial__body'>"{testimonial.feedback}"</p>
+                        <br />
+                        <p className='testimonial__role'><strong>{testimonial.role}</strong></p>
                     </div>
                 ))}
             </Slider>

@@ -12,6 +12,7 @@ import Footer2 from '../components/Footer2'
 import RegistrationForm from '../components/RegistrationForm'
 import ScrollTop from '../components/ScrollTop'
 import Section from '../components/Section'
+import Testimonials from '../components/Testimonials'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Teachers />
       <Section2 />
       <Section3 />
+      <Testimonials />
       <Map />
       <Footer1 />
       <Footer2 />

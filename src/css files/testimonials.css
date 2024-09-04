@@ -1,26 +1,69 @@
-.carousel {
-    max-width: 600px;
-    margin: 0 auto;
+/* Стиль для общего контейнера отзывов */
+.testimonials {
+    padding: 50px 10px;
+    text-align: center;
 }
 
+/* Контейнер для карусели */
+.carousel {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    position: relative; /* Устанавливаем относительное позиционирование для управления внутренними элементами */
+}
+
+/* Стиль для отдельного отзыва */
 .testimonial {
     text-align: center;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    border-radius: 10px; 
+    background-color: #e1e1e1;
+    transition: background-color 0.3s ease;
+    cursor: grab;
+    min-height: 320px;
 }
 
-.slick-prev,
-.slick-next {
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
+.slick-dots li button {
+    color: var(--orange-color);
 }
 
-.slick-prev {
-    left: -40px;
+.slick-dots li button:before {
+    font-size: 12px; /* Размер точек */
 }
 
-.slick-next {
-    right: -40px;
+
+.testimonial__img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+.testimonial__name {
+    font-size: 220%;
+    margin-bottom: 3px;
+}
+
+.testimonial__body {
+    font-size: 110%;
+    color: #353535;
+}
+
+@media (max-width: 557px) {
+    .testimonial {
+        min-height: 350px;
+    }
+
+    .testimonial__name {
+        font-size: 190%;
+    }
+
+    .testimonial__body {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 355px) {
+    .testimonial {
+        min-height: 370px;
+    }
 }
