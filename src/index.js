@@ -24,6 +24,7 @@ import './css files/teacherdet.css'
 import './css files/aboutus.css'
 import './css files/news.css'
 import './css files/subtitle.css'
+import './css files/newsdetail.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,8 +1,13 @@
+import picture1 from '../images/news/news1.jpg'
+
 export const NEWS = [
     {
         'id': 1,
-        'title': 'Новый Курс по Подготовке к IELTS: Набор Открыт!',
-        'body': 'Рады сообщить о старте набора на новый курс подготовки к экзамену IELTS в Oxfort IELTS Center! Этот интенсивный курс рассчитан на 8 недель и идеально подходит для тех, кто хочет достичь высоких баллов на экзамене.',
-        'info': 'Занятия начнутся 15 сентября, и количество мест ограничено. Зарегистрируйтесь прямо сейчас, чтобы обеспечить себе место и подготовиться к экзамену с лучшими специалистами в городе!',
+        'title': 'New IELTS Preparation Course: Enrollment is Open!',
+        'body': 'We are pleased to announce the start of enrollment for the new IELTS preparation course at Oxfort IELTS Center! This intensive 8-week course is perfect for those aiming to achieve high scores on the exam.',
+        'subtitle': 'Classes will begin on September 15, and spots are limited. Register now to secure your spot and prepare for the exam with the best specialists in the city!',
+        'photo': picture1,
+        'date': '05.09.2024'
+
     }
 ]
