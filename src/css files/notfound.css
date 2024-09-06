@@ -1,0 +1,25 @@
+.not-found {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-found__blok {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.not-found__blok h1 {
+    font-size: 700%;
+}
+
+.not-found__blok p {
+    font-size: 300%;
+    margin-bottom: 20px;
+}
+
+.not-found__blok b {
+    font-size: 150%;
+}

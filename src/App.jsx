@@ -10,6 +10,7 @@ import Teacher from './pages/Teacher'
 import LoadPage from './components/LoadPage'
 import ScrollTop from './components/ScrollTop'
 import NewsDetail from './components/NewsDetail'
+import NotFound from './pages/NotFound'
 
 export default function App() {
     return (
@@ -25,6 +26,7 @@ export default function App() {
                 <Route path='/news/:id' element={<NewsDetail />} />
                 <Route path='/contacts' element={<Contacts />} />
                 <Route path='/teachers/:id' element={<TeachersDetail />} />
+                <Route path='*' element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     )
